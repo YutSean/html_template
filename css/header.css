@@ -8,7 +8,7 @@ header{
     position:absolute;
     right:15%;
     top:20%;
-    height:6vh;
+    height:10vh;
     width:15vw;
 }
 .input-group{
@@ -21,8 +21,4 @@ header{
 .input-group>button{
     background-color: #1E2656;
     display:inline-block;
-}
-.input-group .button{
-    margin:2%;
-    padding:2%;
 }
