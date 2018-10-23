@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>demo</title>
 </head>
+
 <link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+
 <body>
     <header>
         <div class="head_container">
-            <div class="search"></div>
-            <div class="login"></div>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" style="background-color:#1E2656;color:white;">Go!</button>
+                    <button class="btn btn-info">Login</button>
+                </span>
+            </div><!-- /input-group -->
         </div>
     </header>
     <nav></nav>
@@ -27,4 +39,5 @@
         <div class="copyright"></div>
     </footer>
 </body>
+
 </html>

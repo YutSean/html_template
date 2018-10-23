@@ -7,14 +7,3 @@ body{
     width:100%;
     height:100%;
 }
-header{
-    background: #58a;
-    position:relative;
-    width:100%;
-    height:10vh;
-}
-.header_container{
-    position:absolute;
-    right:5%;
-    
-}
