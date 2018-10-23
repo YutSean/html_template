@@ -2,11 +2,11 @@ nav {
     padding:0;
     margin-left: 10vw;
     margin-right: 10vw;
+    margin-top:2vh;
     background: white;
     width: 80%;
-    height: 12vh;
-    
-    top: 12vh;
+    height: 10vh;
+    top: 10vh;
     border-bottom: 1vh grey solid ;
     
 }

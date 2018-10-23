@@ -1,0 +1,38 @@
+#myCarousel{
+    margin-left:10vw;
+    margin-right:10vw;
+    width:80%;
+    height: auto;
+
+    position: relative;
+}
+#myCarousel>image{
+    width:100%;
+    height:auto;
+    
+}
+
+.Carousel_Info{
+    position: absolute;
+    left:10%;
+    top:40%;
+}
+.Carousel_Info>div{
+    display: none;
+}
+.Carousel_Info>div.active{
+    display: block
+}
+.Carousel_Info h3{
+    color: white;
+    font-weight: 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.Carousel_Info h3.info{
+    color:orange;
+}
+.Carousel_Info h2{
+    color: white;
+    font-weight: 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
