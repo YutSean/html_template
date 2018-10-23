@@ -17,7 +17,7 @@
 div.news{
     position: relative;
     margin:5px;
-    padding:5px;
+    padding:1%;
     display: flex;
     flex-direction: column;
     flex:1;
@@ -26,7 +26,16 @@ div.news{
     border-right: 1px grey solid;
     border-bottom:1px grey solid;
 }
-
+/*设置横线*/
+ hr{
+    border:1px grey solid;
+    margin-top:1vh;
+    margin-bottom:1vh;
+}
+/*设置Ul*/
+.news ul{
+    margin-top:0;
+}
 /*设置 news li*/
 .news li{
     position: relative;
@@ -43,7 +52,7 @@ div.news{
    position: absolute;
    content:"";
    top:20%;
-   height:50%;
+   height:60%;
    left:0;
    width:0;
    border-left:solid grey .1em;
@@ -77,11 +86,11 @@ p.detail{
 }
 /*end news*/
 
-
+/*设置 events column*/
 .events{
     position: relative;
     margin:5px;
-    padding:5px;
+    padding:1%;
     display: flex;
     flex-direction: column;
     flex:1;
@@ -89,7 +98,76 @@ p.detail{
     border-left:1px grey solid;
     border-right: 1px grey solid;
     border-bottom:1px grey solid;
+    position: relative;
 }
+/*绘制分割线*/
+.events::before{
+    position: absolute;
+    content:"";
+    top:0;
+    height:100%;
+    left:-7px;
+    width:0;
+    border-left:solid grey .1em; 
+}
+/*绘制分割线*/
+.events::after{
+    position: absolute;
+    content:"";
+    top:0;
+    height:100%;
+    right:-7px;
+    width:0;
+    border-left:solid grey .1em; 
+}
+.events li{
+    position: relative;
+    padding:10px;
+    
+}
+.events a{
+    border-radius:0;
+    display: block;
+    padding:0;
+  
+}
+.events li:nth-last-child(1)::before{
+   position: absolute;
+   content:"";
+   top:20%;
+   height:60%;
+   left:0;
+   width:0;
+   border-left:solid grey .1em;
+}
+/*制定evnets 子块*/
+.events_cards{
+    display: flex;
+    flex-direction: row;/*left 和right 横向排布*/
+    margin:2%;
+}
+/*左边比例*/
+.events_cards .left{
+    flex:1;
+    display: flex;/*left 本身也是flex布局 row:纵向*/
+    flex-direction: column;
+    background: #58a;
+    margin:2%;
+}
+.left_top{
+    margin:10%;
+    padding-bottom:0;
+}
+.left_bottom{
+    margin:10%;
+    padding-top:0;
+}
+/*右边比例*/
+.events_cards .right{
+    flex:3;
+    margin:2%;
+}
+/*end events*/
 .publications{
     position: relative;
     margin:5px;
