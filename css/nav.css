@@ -34,6 +34,7 @@ nav li::after{
     width:0;
     border-right:solid grey .1em;
  }
+ /*局中元素未设定样式*/
  nav li.special{
     
  }
