@@ -65,16 +65,18 @@ p.all{
 }
 /*摘要*/
 p.lead{
+    font-size:22px;
+    font-weight: bolder;
     padding:2px;
     margin:2px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 /*详细*/
 p.detail{
     padding:2px;
     margin:2px;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+    font-size:18px;
 }
 /*日期*/
 .news p.date{
@@ -154,18 +156,73 @@ p.detail{
     background: #58a;
     margin:2%;
 }
+.left{
+    display: flex;
+    justify-items: center;
+}
+/*左边上*/
 .left_top{
-    margin:10%;
+    margin-left:15%;
+    margin-right:15%;
+    margin-top:30%;
+    margin-bottom:1%;
     padding-bottom:0;
 }
+/*左边上文字*/
+p.day{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:20px;
+    font-weight: bold;
+    text-align: center;
+    margin:0;
+    padding:0;
+    color:white;
+}
+/*左边下文字*/
+p.month{
+    font-family:'Courier New', Courier, monospace;
+    font-size:20px;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+    color:white;
+    text-align:center;
+
+}
+p.year
+{
+    font-family:'Courier New', Courier, monospace;
+    font-size:20px;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+    color:white;
+    text-align:center;
+
+}
+/*左边下*/
 .left_bottom{
-    margin:10%;
+    position: relative;
+    margin-left:15%;
+    margin-right:15%;
+    margin-bottom: 30%;
+    margin-top:1%;
     padding-top:0;
+}
+/*在左边下的上方加入横线*/
+hr.white{
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+    border: 1px solid white;
 }
 /*右边比例*/
 .events_cards .right{
     flex:3;
-    margin:2%;
+    margin:1%;
+}
+.right a{
+    text-decoration: underline;
 }
 /*end events*/
 .publications{
