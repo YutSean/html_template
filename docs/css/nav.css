@@ -1,0 +1,40 @@
+nav {
+    padding:0;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top:2vh;
+    background: white;
+    width: 80%;
+    height: 10vh;
+    top: 10vh;
+    border-bottom: 1vh grey solid ;
+    
+}
+
+nav li{
+    position: relative;
+    padding:0;
+    margin:0;
+}
+nav li::before{
+   position: absolute;
+   content:"";
+   top:0;
+   height:100%;
+   left:0;
+   width:0;
+   border-left:solid grey .1em;
+}
+nav li::after{
+    position: absolute;
+    content:"";
+    top:0;
+    height:100%;
+    right:0;
+    width:0;
+    border-right:solid grey .1em;
+ }
+ /*局中元素未设定样式*/
+ nav li.special{
+    
+ }

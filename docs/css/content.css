@@ -1,0 +1,291 @@
+/*设置整个容器*/
+#content{
+    margin-top:1vh;
+    margin-left:10vw;
+    margin-right:10vw;
+    margin-bottom:0;
+    display: flex;
+    flex-direction: row;
+    background: white;
+    height:auto;
+    position:relative;
+    
+}
+
+/*设置整个容器的button*/
+#content button{
+    width:60%;
+    height:auto;
+    margin-top:1vh;
+    
+}
+/*设置 News div*/
+div.news{
+    position: relative;
+    margin:5px;
+    padding:1%;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    border-top:1vh #1E2656 solid;
+    border-left:1px grey solid;
+    border-right: 1px grey solid;
+    border-bottom:1px grey solid;
+}
+/*设置横线*/
+ hr{
+    border:1px grey solid;
+    margin-top:1vh;
+    margin-bottom:1vh;
+}
+/*设置Ul*/
+.news ul{
+    margin-top:0;
+}
+/*设置 news li*/
+.news li{
+    position: relative;
+    padding:10px;
+    
+}
+.news a{
+    border-radius:0;
+    display: block;
+    padding:0;
+  
+}
+.news li:nth-last-child(1)::before{
+   position: absolute;
+   content:"";
+   top:20%;
+   height:60%;
+   left:0;
+   width:0;
+   border-left:solid grey .1em;
+}
+/*设置各种字体*/
+
+/*all*/
+p.all{
+
+}
+/*摘要*/
+p.lead{
+    font-size:22px;
+    font-weight: bolder;
+    padding:1px;
+    margin:1px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+/*详细*/
+p.detail{
+    padding:1px;
+    margin:1px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:18px;
+}
+/*日期*/
+.news p.date{
+    margin:1px;
+    padding:1px;
+    font-color:lightgrey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: .2em;
+}
+/*end news*/
+
+/*设置 events column*/
+.events{
+    position: relative;
+    margin:5px;
+    padding:1%;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    border-top:1vh #1E2656 solid;
+    border-left:1px grey solid;
+    border-right: 1px grey solid;
+    border-bottom:1px grey solid;
+    position: relative;
+}
+/*绘制分割线*/
+.events::before{
+    position: absolute;
+    content:"";
+    top:0;
+    height:100%;
+    left:-7px;
+    width:0;
+    border-left:solid grey .1em; 
+}
+/*绘制分割线*/
+.events::after{
+    position: absolute;
+    content:"";
+    top:0;
+    height:100%;
+    right:-7px;
+    width:0;
+    border-left:solid grey .1em; 
+}
+.events li{
+    position: relative;
+    padding:10px;
+    
+}
+.events a{
+    border-radius:0;
+    display: block;
+    padding:0;
+  
+}
+.events li:nth-last-child(1)::before{
+   position: absolute;
+   content:"";
+   top:20%;
+   height:60%;
+   left:0;
+   width:0;
+   border-left:solid grey .1em;
+}
+/*制定evnets 子块*/
+.events_cards{
+    display: flex;
+    flex-direction: row;/*left 和right 横向排布*/
+    border:1px grey solid;
+    padding:0;
+    margin:2px;
+}
+
+/*左边比例*/
+.events_cards .left{
+    flex:1;
+    display: flex;/*left 本身也是flex布局 row:纵向*/
+    flex-direction: column;
+    background: #58a;
+    
+}
+.left{
+    display: flex;
+    justify-items: center;
+}
+/*左边上*/
+.left_top{
+    margin-left:15%;
+    margin-right:15%;
+    margin-top:30%;
+    margin-bottom:1%;
+    padding-bottom:0;
+}
+/*左边上文字*/
+p.day{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:20px;
+    font-weight: bold;
+    text-align: center;
+    margin:0;
+    padding:0;
+    color:white;
+}
+/*左边下文字*/
+p.month{
+    font-family:'Courier New', Courier, monospace;
+    font-size:20px;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+    color:white;
+    text-align:center;
+
+}
+p.year
+{
+    font-family:'Courier New', Courier, monospace;
+    font-size:20px;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+    color:white;
+    text-align:center;
+
+}
+/*左边下*/
+.left_bottom{
+    position: relative;
+    margin-left:15%;
+    margin-right:15%;
+    margin-bottom: 30%;
+    margin-top:1%;
+    padding-top:0;
+}
+/*在左边下的上方加入横线*/
+hr.white{
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+    border: 1px solid white;
+}
+/*右边比例*/
+.events_cards .right{
+    flex:3;
+    margin:1%;
+}
+.right a{
+    text-decoration: underline;
+}
+/*end events*/
+
+/*CSS FOR PUBLICATIONS COLOMN*/
+.publications{
+    position: relative;
+    margin:5px;
+    padding:1%;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    border-top:1vh #1E2656 solid;
+    border-left:1px grey solid;
+    border-right: 1px grey solid;
+    border-bottom:1px grey solid;
+    position: relative;
+}
+/*绘制publications 标题*/
+.publications li{
+    position: relative;
+    padding:10px;
+    
+}
+.publications a{
+    border-radius:0;
+    display: block;
+    padding:0;
+  
+}
+/*绘制分割线*/
+.publications li:nth-last-child(1)::before{
+   position: absolute;
+   content:"";
+   top:20%;
+   height:60%;
+   left:0;
+   width:0;
+   border-left:solid grey .1em;
+}
+
+.icon_container > div{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-content: space-between;
+}
+.icon{
+    background: #58a;
+    height:55px;
+    width:100%;
+    margin:2px;
+}
+.icon img{
+    width:100%;
+    height:100%;
+}
+
