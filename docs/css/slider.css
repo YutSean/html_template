@@ -1,0 +1,55 @@
+#myCarousel{
+    margin-left:10vw;
+    margin-right:10vw;
+    width:80%;
+    height: auto;
+
+    position: relative;
+}
+#myCarousel>image{
+    width:100%;
+    height:auto;
+    
+}
+.carousel-indicators{
+    position: absolute;
+    bottom:15%;
+}
+.Carousel_Info{
+    position: absolute;
+    left:5%;
+    top:40%;
+}
+.Carousel_Info>div{
+    display: none;
+}
+.Carousel_Info>div.active{
+    display: block
+}
+.Carousel_Info h3{
+    color: white;
+    font-weight: 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.Carousel_Info h3.info{
+    color:orange;
+}
+.Carousel_Info h2{
+    color: white;
+    font-weight: 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.Carousel_nav h3{
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    font-weight: 3em;
+}
+#nav_1{
+    background: rgb(80, 154, 204);
+}
+#nav_2{
+    background: rgb(42, 147, 216);
+}
+#nav_3{
+    background: rgb(17, 139, 221);
+}
